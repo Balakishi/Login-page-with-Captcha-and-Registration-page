@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B7FA1E4-588F-42B8-BA48-8333E984840F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Login_and_Registration_Page</RootNamespace>
+    <AssemblyName>Login and Registration Page</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_captcha1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_captcha1.Designer.cs">
+      <DependentUpon>Form_captcha1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_conguralitons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_conguralitons.Designer.cs">
+      <DependentUpon>Form_conguralitons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Registration.Designer.cs">
+      <DependentUpon>Form_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Welcome.Designer.cs">
+      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_captcha1.resx">
+      <DependentUpon>Form_captcha1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_conguralitons.resx">
+      <DependentUpon>Form_conguralitons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Registration.resx">
+      <DependentUpon>Form_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Welcome.resx">
+      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e6329ec42c9cf3256daf8767640d7eb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2da51cf8420366d183c99fdf77c11aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e6329ec42c9cf3256daf8767640d7eb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\578822130af597eaea01502297abb6c9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1eff9e6b6832e2355be91a5c61740a81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8842a04ad2ae00c375996d00c27e7fd0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2da51cf8420366d183c99fdf77c11aa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c9cc56cad3dfdbc83e75a1481edf7182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2c67d17910671d7d9cfdfca7de0d1ebd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\938cbdacd7ab4e2fff74fcc3f3b1b43f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fdcbe3d13c9ac388da10d23bbfee69ff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11086845e5cbc9e6744912d1ed4b216d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2bdb8faf0d594f464c03c5f22e36178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fc5e569d8640a6cf7cb778719f68a357.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\938cbdacd7ab4e2fff74fcc3f3b1b43f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6c28ca623e2edd7436a266aedbf214f0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2c67d17910671d7d9cfdfca7de0d1ebd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d07e20ae55cbdb95d00f12929618d0ee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e0ce7e99488b08097da8016dc117c52d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2bdb8faf0d594f464c03c5f22e361781.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c73c6a0ca723627f9f42d810ae4c50a7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256347456607448595f117b61a9cb55f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2e6329ec42c9cf3256daf8767640d7eb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fc8f42f13237df7b702f568e1a0245de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fff475b949e36cd477753fe2ec823985.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approved %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approved %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_365172337_CYgi2vNNILIjrQKnDk5T3roxPjAengrp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approved %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captcha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\171.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdasdsadsad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdadsda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55641.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
