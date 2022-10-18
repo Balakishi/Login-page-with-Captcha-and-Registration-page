@@ -24,4 +24,4 @@ This app consists of 4 forums. Login page, registration page so that you can cre
 ![banner result](https://github.com/Balakishi/Login-page-with-Captcha-and-Registration-page/blob/master/Congratulation%20page%20interface.PNG)
 
 
-##GRAB A GUN AND START THE GAME!
+**GRAB A GUN AND START THE GAME!**
