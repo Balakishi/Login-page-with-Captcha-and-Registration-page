@@ -11,9 +11,6 @@ This app consists of 5 forums. Login page, registration page so that you can cre
 **Registration page interface**
 ![banner result](https://github.com/Balakishi/Login-page-with-Captcha-and-Registration-page/blob/master/Registration%20page%20interface.PNG)
 
-**Registration page interface**
-![banner result](https://github.com/Balakishi/Login-page-with-Captcha-and-Registration-page/blob/master/Registration%20page%20interface.PNG)
-
 **Captcha page interface**
 ![banner result](https://github.com/Balakishi/Login-page-with-Captcha-and-Registration-page/blob/master/Captcha%20interface.PNG)
 
